@@ -22,7 +22,7 @@ jobs:
   lint:
     needs: pre_job
     if: needs.pre_job.outputs.should_skip != 'true'
-    name: "Coding Standards"
+    name: "Lint"
     runs-on: "ubuntu-latest"
     steps:
       - name: Checkout

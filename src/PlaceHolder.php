@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace LibraryNamespace;
+namespace icanhazstring\TwigInfer;
 
 final class PlaceHolder
 {

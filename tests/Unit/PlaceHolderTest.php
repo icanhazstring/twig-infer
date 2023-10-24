@@ -1,11 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace LibraryNamespace\Test\Unit;
+namespace icanhazstring\TwigInfer\Tests\Unit;
 
-use LibraryNamespace\PlaceHolder;
+use icanhazstring\TwigInfer\PlaceHolder;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(PlaceHolder::class)]
 final class PlaceHolderTest extends TestCase
 {
     /**

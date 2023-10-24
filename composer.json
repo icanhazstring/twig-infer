@@ -49,15 +49,14 @@
         "mutation-testing": "@php vendor/bin/infection --threads=max --only-covered --coverage=reports --skip-initial-tests --log-verbosity=none -s",
         "test": [
             "@test:prepare",
-            "@test:unit",
-            "@test:merge-phpunit-xml"
+            "@test:unit"
         ],
         "test:prepare": [
             "mkdir -p reports",
             "rm -rf reports/*"
         ],
         "test:unit": [
-            "@php -dzend_extension=xdebug.so -dxdebug.mode=coverage vendor/bin/phpunit --testsuite=Unit,Integration --order-by=random --log-junit reports/junit_unit.xml --coverage-clover reports/coverage.xml --coverage-xml=reports/coverage-xml --colors=never"
+            "@php -dzend_extension=xdebug.so -dxdebug.mode=coverage vendor/bin/phpunit --testsuite=Unit,Integration --order-by=random --log-junit reports/junit.xml --coverage-clover reports/coverage.xml --coverage-xml=reports/coverage-xml --colors=never"
         ]
     },
     "extra": {
