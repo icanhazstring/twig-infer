@@ -1,0 +1,8 @@
+docker-compose.override.yml
+/reports/
+vendor/
+
+###> phpunit/phpunit ###
+/phpunit.xml
+/.phpunit.cache
+###< phpunit/phpunit ###
