@@ -1,6 +1,7 @@
 docker-compose.override.yml
 /reports/
 vendor/
+composer.lock
 
 ###> phpunit/phpunit ###
 /phpunit.xml
